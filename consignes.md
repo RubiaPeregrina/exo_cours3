@@ -76,19 +76,20 @@ OK
 4. Quelles étiquettes du train **ne figurent pas** dans `HYE_tagset.txt`, et combien de fois chacune apparaît-elle ? Attention à deux pièges :
    - certains noms d'étiquettes du tagset se terminent par une espace ;
    - une étiquette composée est valide si chacune de ses parties l'est.
-5. Refaites le **dictionnaire** de la partie 12 du notebook, avec le train arménien. Quel score obtient-il sur le test `in-domain`, puis sur le test `out-of-domain` ? Le score baisse-t-il autant qu'en grec (0,73 contre 0,51) ?
+1. Refaites le **dictionnaire** de la partie 12 du notebook, avec le train arménien. Quel score obtient-il sur le test `in-domain`, puis sur le test `out-of-domain` ? Le score baisse-t-il autant qu'en grec (0,73 contre 0,51) ?
+OK
 
 ## 4. Le rapport : `RAPPORT.md`
 
-- Les 5 réponses, copiées depuis la sortie du script.
-- La consigne exacte que vous avez donnée à l'agent.
-- **Une erreur de l'agent** : ce qu'il a fait de travers (mauvais filtre, boucle interdite, fonction hors skill, chiffre inventé…) et ce que vous avez changé dans `AGENTS.md`, le `.toml` ou la skill pour la corriger.
-- Les fonctions que vous avez ajoutées à la skill `pandas-tuto`, s'il y en a.
-- En 3 lignes : qu'est-ce que l'agent apporte ici par rapport au notebook ? Qu'est-ce qu'il coûte ?
+- Les 5 réponses, copiées depuis la sortie du script. ok
+- La consigne exacte que vous avez donnée à l'agent. ok
+- **Une erreur de l'agent** : ce qu'il a fait de travers (mauvais filtre, boucle interdite, fonction hors skill, chiffre inventé…) et ce que vous avez changé dans `AGENTS.md`, le `.toml` ou la skill pour la corriger. ok
+- Les fonctions que vous avez ajoutées à la skill `pandas-tuto`, s'il y en a. ok
+- En 3 lignes : qu'est-ce que l'agent apporte ici par rapport au notebook ? Qu'est-ce qu'il coûte ?ok
 
 ## 5. Avant de rendre
 
 - [ ] `uv run python scripts/analyser.py` fonctionne depuis un clone neuf du dépôt.
-- [ ] Il n'y a ni `.venv/` ni `.env` dans le dépôt.
-- [ ] `pyproject.toml` et `uv.lock` sont commités.
-- [ ] Le script n'a pas été écrit à la main : il vient de l'agent, éventuellement corrigé après vos modifications de `AGENTS.md`, du `.toml` ou de la skill.
+- [x] Il n'y a ni `.venv/` ni `.env` dans le dépôt.
+- [x] `pyproject.toml` et `uv.lock` sont commités.
+- [x] Le script n'a pas été écrit à la main : il vient de l'agent, éventuellement corrigé après vos modifications de `AGENTS.md`, du `.toml` ou de la skill.

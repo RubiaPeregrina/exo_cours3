@@ -12,10 +12,10 @@ instructions = '''
    - certains noms d'étiquettes du tagset se terminent par une espace ;
    - une étiquette composée est valide si chacune de ses parties l'est.
 5. Refaites le **dictionnaire** de la partie 12 du notebook, avec le train arménien. Quel score obtient-il sur le test `in-domain`, puis sur le test `out-of-domain` ? Le score baisse-t-il autant qu'en grec (0,73 contre 0,51) ? ;
-- ce qu'il n'a pas le droit de faire ;
+- Interdictions : Lancer une autre commande que uv run python scripts/analyser.py (pas de pip, pas de uv add). Lire .env ou ouvrir directement les fichiers de data/. Utiliser une fonction pandas absente de la skill pandas-tuto. Écrire une boucle for (ou iterrows, itertuples, apply ligne par ligne) sur les lignes d'un tableau. Donner un chiffre qui n'apparaît pas dans la sortie du script. ;
 - 3 essais au plus ;
 - Réponse au question en 5 lignes numérotées de 1 à 5 sous un titre.
 '''
 
 [tools.bash]
-allowlist = [`uv run python scripts/analyser.py`]
+allowlist = ['uv run python scripts/analyser.py']
