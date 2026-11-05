@@ -1,19 +1,16 @@
 # Mini-analyste pandas : arménien classique (HYE)
 
-<!-- TODO : en une phrase, l'objectif du projet. -->
+Répondre aux questions Q1–Q5 sur le corpus arménien (HYE) en écrivant puis en lançant un script pandas, `scripts/analyser.py`.
 
 ## Règles
-<!-- TODO : 3 ou 4 règles, une par ligne. Pensez à :
-     - comment lancer Python ;
-     - d'où doivent venir les chiffres ;
-     - ce que l'agent n'a pas le droit de lire. -->
--
--
--
+- Utiliser uniquement `uv run`, jamais `pip` directement
+- Les chiffres doivent tous provenir du résultat du script. Ils ne sont jamais inventés.
+- n'utiliser que les fonction de la skill "pandas tuto"
+- tu ne lis pas directement les fichiers du dossier `data/`
 
 ## Rôles
-<!-- TODO : quel agent fait quoi. -->
-- 
+- L'agent principal transmet les questions au sous-agent `analyste` et rapporte sa réponse sans la modifier.
+- L'agent analyste écrit `scripts/analyser.py`, le lance et répond en 5 lignes.
 
 ## Repères
 - Données : `data/HYE_train.tsv`, `data/HYE_test_in-domain.tsv`, `data/HYE_test_out-of-domain.tsv`, colonnes `text_form form lemma pos`.

@@ -10,29 +10,29 @@ Aucun appel d'API n'est nécessaire : créez le fichier `.env` dans ce dépôt p
 
 ```
 devoir-hye/
-├── consignes.md                      ← ce fichier
-├── AGENTS.md                         ← squelette à compléter
-├── .gitignore                        ← à écrire
-├── pyproject.toml, uv.lock           ← créés par uv
-├── data/                             ← à récupérer dans le dépôt du cours
+├── consignes.md                      ← ce fichier ok
+├── AGENTS.md                         ← squelette à compléter ok
+├── .gitignore                        ← à écrire ok
+├── pyproject.toml, uv.lock           ← créés par uv ok
+├── data/                             ← à récupérer dans le dépôt du cours ok
 │   ├── HYE_train.tsv
 │   ├── HYE_test_in-domain.tsv
 │   ├── HYE_test_out-of-domain.tsv
 │   └── HYE_tagset.txt
 ├── scripts/analyser.py               ← écrit par l'agent, pas par vous
 ├── RAPPORT.md                        ← à écrire
-└── .vibe/
-    ├── agents/analyste.toml          ← squelette à compléter
+└── .vibe/ ok
+    ├── agents/analyste.toml          ← squelette à compléter ok
     └── skills/
-        ├── pandas-tuto/SKILL.md      ← squelette à compléter
-        └── tagset/                   ← fourni, à ne pas modifier
+        ├── pandas-tuto/SKILL.md      ← squelette à compléter OK
+        └── tagset/                   ← fourni, à ne pas modifier OK
             ├── SKILL.md
             └── references/HYE_tagset.txt
 ```
-
+ok
 ## 1. Mise en place
 
-1. **L'environnement.** À la racine du dépôt, lancez seulement ces deux commandes :
+1. **L'environnement.** À la racine du dépôt, lancez seulement ces deux commandes : OK
    ```bash
    uv init --python 3.12
    uv add pandas
@@ -43,22 +43,26 @@ devoir-hye/
    HYE_test_in-domain.tsv
    HYE_test_out-of-domain.tsv
    HYE_tagset.txt
+   OK
 
 3. **Le `.gitignore`.** Il doit au moins empêcher de commiter l'environnement virtuel (`.venv/`), les caches Python et tout fichier `.env`. Vérifiez avec `git status` avant votre premier commit.
-
+OK
 ## 2. Ce que vous complétez
 
 1. **`AGENTS.md`** (10 lignes au plus) : l'objectif du projet en une phrase, puis 3 ou 4 règles. Pensez à :
    - comment lancer Python ;
    - d'où doivent venir les chiffres ;
    - ce que l'agent n'a pas le droit de lire.
-2. **`.vibe/agents/analyste.toml`** : un sous-agent qui écrit `scripts/analyser.py` puis le lance.
+OK
+1. **`.vibe/agents/analyste.toml`** : un sous-agent qui écrit `scripts/analyser.py` puis le lance.
    - Sa liste de commandes autorisées (`allowlist`) ne contient que `uv run python scripts/analyser.py`.
    - Il fait 3 essais au plus et répond en 5 lignes.
-3. **`.vibe/skills/pandas-tuto/SKILL.md`** : la liste des fonctions pandas que l'agent a le droit d'utiliser.
+ok
+1. **`.vibe/skills/pandas-tuto/SKILL.md`** : la liste des fonctions pandas que l'agent a le droit d'utiliser.
    - Partez du tableau récapitulatif du notebook.
    - Si une question demande une fonction absente du notebook, ajoutez-la au tableau et signalez-le dans votre rapport.
    - L'agent travaille sur des colonnes entières : pas de boucle `for` sur les lignes d'un tableau.
+OK
 
 **Ne modifiez pas** la skill `tagset`.
 
